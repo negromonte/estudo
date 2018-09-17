@@ -1,0 +1,20 @@
+Estrutura basica de uma pagina web com os comandos html: 6 Tags Principais
+
+<Header> 
+É a parte do cabeçalho se repete em todas as paginas do site. Tag padrão e fixo.
+
+<Nav>
+É a tag dos menus de navegação, atalhos para paginas.(pode esta dentro da tag "header" ou "footer"
+depende da estrutura.
+
+<section>
+É uma sessão do site, geralmente contem tags de cadeçalhos(h1 a h6).
+
+<article>
+Serve para mostrar post de um forum, artigo, documentario, etc.
+
+<footer>
+Usa no final do site ou no final de uma "section" ou "article".
+
+<aside>
+Conteudo paralelo do conteudo principal do site.
