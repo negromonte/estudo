@@ -16,9 +16,9 @@
  	</head>
 
  	<body>
- 		<header>
-	 	<nav class="navbar navbar-expand-md deep-purple accent-2 navbar-dark">
+ 		<nav class="navbar navbar-expand-md deep-purple accent-2 navbar-dark sticky-top">
 		  	<!-- Brand -->
+		  	<div class="container">
 		 	<a class="navbar-brand font-weight-bold" href="index.html">FreeWithUs</a>
 
 		  	<!-- Toggler/collapsibe Button -->
@@ -42,12 +42,14 @@
 			        <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#funcionarios').offset().top}, 2000);">Funcionários</a>
 			      </li> 
 			      <li class="nav-item active">
-			        <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#suporte').offset().top}, 2000);">Suporte</a>
+			        <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#suportetecnico').offset().top}, 2000);">Suporte</a>
 			      </li> 
 			    </ul>
 		  	</div> 
-		  	
+		  	</div>
 		</nav>
+ 		<header>
+	 	
 			<div class="jumbotron text-center bg-light" style="margin-bottom:0">
 			  <h1>Automação Residencial </h1>
 			  <p>Liberte-se do passado e viva o Futuro!</p> 
@@ -78,7 +80,7 @@
 							  </ul>
 							  <div class="carousel-inner">
 							    <div class="carousel-item active">
-							      <img src="img/saladeestar.jpg" alt="sala de estar" width="1100" height="500" class="container-fluid">
+							      <img src="img/saladeestar.jpg" alt="sala de estar" width="1100" height="500" class="img-fluid container-fluid">
 							      <div class="carousel-caption">
 							        <h3>Sala De Estar</h3>
 							        <p>Interação com todos os tipos de eletrônicos</p>
@@ -117,7 +119,7 @@
 					<div class="section-title d-flex align-items-start justify-content-center" style="height: 100px"><h1>O Que Fazemos</h1></div>
 					<div class="services-box">
 						<ul class="row" style="list-style: none"> 
-							<li class="services-box_item col-md-4 col-sm-6 col-xs-12 " > 
+							<li class="services-box_item col-md-4 col-sm-6 col-xs-12 " style="padding-top: 30px"> 
 								<img src="https://conceptainc.com/wp-content/themes/concepta/img/services/mobile-development.jpg" class="img-fluid">
 								<div class="carousel-caption"> 
 									<h4>Desenvolvimento
@@ -125,7 +127,7 @@
 									 Mobile</h4>
 								</div>
 							</li>
-							<li class="services-box_item col-md-4 col-sm-6 col-xs-12 ">
+							<li class="services-box_item col-md-4 col-sm-6 col-xs-12 " style="padding-top: 30px">
 								<img src="https://conceptainc.com/wp-content/themes/concepta/img/services/web-development.jpg" class="img-fluid">
 								<div class="carousel-caption"> 
 									<h4>Desenvolvimento
@@ -133,7 +135,7 @@
 									 Web</h4>
 								</div>
 							</li>
-							<li class="services-box_item col-md-4 col-sm-6 col-xs-12 "> 
+							<li class="services-box_item col-md-4 col-sm-6 col-xs-12 " style="padding-top: 30px"> 
 								<img src="https://conceptainc.com/wp-content/themes/concepta/img/services/data-intelligence.jpg"class="img-fluid">
 									<div class="carousel-caption">
 								 		<h4>Data
