@@ -5,8 +5,9 @@
 
 .banner{
 	background-image: url(../img/cozinha2.jpeg); 
-	background-size: cover;
-	height: 948px;
+	width: 100%;
+	background-size: 100% 100%;
+	height: auto;
 	
 	}
 
@@ -17,10 +18,11 @@
 	}
 
 	h2{
-		font-size: 3em;
+		font-size: 2em;
 		text-align: center;
-		padding-top: 50%;
+		padding-top: 40%;
 	}
+
 
 	/*
 <link rel="stylesheet" type="text/css" href="css/style.css">
