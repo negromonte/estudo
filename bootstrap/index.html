@@ -2,132 +2,281 @@
 <html>
  	<head>
  		<meta charset="utf-8">
- 		<title>Bootstrap 101 template</title>
+ 		<title>FreeWithUs</title>
  		<meta name="viewport" content="width=device-width, initial-scale=1">
  		<!--Bootstrap -->
- 		<link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ 		<link href="img/icons/fontawesome-free-5.4.1-web/css/all.css" rel="stylesheet">
+ 		<link href="MDBOOTSTRAP/css/mdb.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
  	</head>
+
  	<body>
- 		
- 	<nav class="navbar navbar-dark bg-dark">
-		 <a class="navbar-brand" href="#">VMegromonte</a>
-		 <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-   		 </form>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ 		<header>
+	 	<nav class="navbar navbar-expand-md deep-purple accent-2 navbar-dark">
+		  	<!-- Brand -->
+		 	<a class="navbar-brand font-weight-bold" href="index.html">FreeWithUs</a>
+
+		  	<!-- Toggler/collapsibe Button -->
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Link</a>
-		      </li>
-		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Dropdown
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Action</a>
-		          <a class="dropdown-item" href="#">Another action</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">Something else here</a>
+		 	</button>
+		 	 <!-- Navbar links -->
+		  	<div class="collapse navbar-collapse justify-content-end font-weight-bold" id="collapsibleNavbar">
+			    <ul class="navbar-nav navbar-right">
+			    	<!--"active"  comando para destacar as paginas selecionadas-->
+			      <li class="nav-item active">
+			        <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#sobrenos').offset().top}, 2000);">Sobre Nós</a>
+			      </li>
+			      <li class="nav-item active">
+			        <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#casasfeitas').offset().top}, 2000);">Casas</a>
+			      </li>
+			      <li class="nav-item active">
+			        <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#oquefazemos').offset().top}, 2000);">O Que Fazemos</a>
+			      </li>
+			      <li class="nav-item active">
+			        <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#funcionarios').offset().top}, 2000);">Funcionários</a>
+			      </li> 
+			      <li class="nav-item active">
+			        <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#suporte').offset().top}, 2000);">Suporte</a>
+			      </li> 
+			    </ul>
+		  	</div> 
+		  	
+		</nav>
+			<div class="jumbotron text-center bg-light" style="margin-bottom:0">
+			  <h1>Automação Residencial </h1>
+			  <p>Liberte-se do passado e viva o Futuro!</p> 
+			</div>
+		</header>	
+
+
+
+		<section id="section-content" class="section-content" role="main">
+			<div id="sobrenos" class="container-fluid"  style="padding-top:70px;padding-bottom:70px">
+				<div class="container-fluid">
+				<div class="section-title d-flex align-items-start justify-content-center" style="height: 100px"><h1>Sobre Nós</h1></div>
+				  <p>	Somos uma empresa formada por um grupo de amigos de infância que teve como objetivo, transformar um passa-tempo em uma empresa de credibilidade e harmônia diante de todos os outros concorrentes. Temos como objetivo ser a maior empresa de automação residencial da America Latina, por meio das nossas inovações, trabalho bom e seguro, Ambiente de trabalho agradavel e flexivel , sempre com o intuito de trazer o que é melhor para os nossos clientes. Para mais informações sobre nossa empresa, <a href="#">clique aqui!</a></p>
+				</div>
+			</div>
+
+
+			<div id="casas" class="section grey">
+				<div id="casasfeitas" class="container-fluid bg-light" style="padding-top:70px;padding-bottom:70px">
+					<div class = "container-fluid">
+					 <div class="section-title d-flex align-items-start justify-content-center" style="height: 100px"> <h1>Casas Feitas</h1></div>
+						 <div class="container-fluid">
+							<div id="demo" class="carousel slide" data-ride="carousel">
+							  <ul class="carousel-indicators">
+							    <li data-target="#demo" data-slide-to="0" class="active"></li>
+							    <li data-target="#demo" data-slide-to="1"></li>
+							    <li data-target="#demo" data-slide-to="2"></li>
+							  </ul>
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img src="img/saladeestar.jpg" alt="sala de estar" width="1100" height="500" class="container-fluid">
+							      <div class="carousel-caption">
+							        <h3>Sala De Estar</h3>
+							        <p>Interação com todos os tipos de eletrônicos</p>
+							      </div>   
+							    </div>
+							    <div class="carousel-item">
+							      <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+							      <div class="carousel-caption">
+							        <h3>Chicago</h3>
+							        <p>Thank you, Chicago!</p>
+							      </div>   
+							    </div>
+							    <div class="carousel-item">
+							      <img src="ny.jpg" alt="New York" width="1100" height="500">
+							      <div class="carousel-caption">
+							        <h3>New York</h3>
+							        <p>We love the Big Apple!</p>
+							      </div>   
+							    </div>
+							  </div>
+							  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+							    <span class="carousel-control-prev-icon"></span>
+							  </a>
+							  <a class="carousel-control-next" href="#demo" data-slide="next">
+							    <span class="carousel-control-next-icon"></span>
+							  </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id = "servicos" class="section">
+				<div id="oquefazemos" class="container" style="padding-top:70px;padding-bottom:70px">
+					<div class="section-title d-flex align-items-start justify-content-center" style="height: 100px"><h1>O Que Fazemos</h1></div>
+					<div class="services-box">
+						<ul class="row" style="list-style: none"> 
+							<li class="services-box_item col-md-4 col-sm-6 col-xs-12 " > 
+								<img src="https://conceptainc.com/wp-content/themes/concepta/img/services/mobile-development.jpg" class="img-fluid">
+								<div class="carousel-caption"> 
+									<h4>Desenvolvimento
+									<br> 
+									 Mobile</h4>
+								</div>
+							</li>
+							<li class="services-box_item col-md-4 col-sm-6 col-xs-12 ">
+								<img src="https://conceptainc.com/wp-content/themes/concepta/img/services/web-development.jpg" class="img-fluid">
+								<div class="carousel-caption"> 
+									<h4>Desenvolvimento
+									<br> 
+									 Web</h4>
+								</div>
+							</li>
+							<li class="services-box_item col-md-4 col-sm-6 col-xs-12 "> 
+								<img src="https://conceptainc.com/wp-content/themes/concepta/img/services/data-intelligence.jpg"class="img-fluid">
+									<div class="carousel-caption">
+								 		<h4>Data
+								  		<br>
+								  		 Intelligence</h4>
+									</div>
+							</li>
+							<li class="services-box_item col-md-4 col-sm-6 col-xs-12 " style="padding-top: 30px">
+								<img src="https://conceptainc.com/wp-content/themes/concepta/img/services/software-development.jpg" class="img-fluid">
+								<div class="carousel-caption">
+							 		<h4>Desenvolvimento
+									 <br>
+									Software</h4> 
+								</div>
+							</li>
+							<li class="services-box_item col-md-4 col-sm-6 col-xs-12 " style="padding-top: 30px">
+								<img src="https://conceptainc.com/wp-content/themes/concepta/img/services/business-intelligence.jpg" class="img-fluid">
+								<div class="carousel-caption">
+									<h4>Trabalho 
+									 <br>
+									Inteligente</h4>
+								</div>
+							</li>
+							<li class="services-box_item col-md-4 col-sm-6 col-xs-12 " style="padding-top: 30px">
+								<img alt="Artificial Inteligence" src="https://conceptainc.com/wp-content/themes/concepta/img/services/artificial-intelligence.jpg" class="img-fluid">
+								<div class="carousel-caption">
+									<h4>Casa 
+									 <br> 
+									Inteligente</h4>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="suporte" class = "section grey">
+				<div id="funcionarios" class="container-fluid bg-light" style="padding-top:70px;padding-bottom:70px">
+					<div class="container-fluid">
+					<div class="section-title d-flex align-items-start justify-content-center" style="height: 100px"> <h1>Fucionários</h1></div>	  
+					 <ul>
+					 	<li> Pedro Paulo Lopes Negromonte Silva
+					 		<ul>
+					 			<li>CEO - FreeWithUs</li>
+					 			<li>Formado em Sistemas de Informações no ano de 2015, pelo Instituto De Ensino Superior Da Paraíba (IESP)</li>
+					 			<li>Fundador Da FreeWithUs</li>
+					 		</ul>
+					 	</li><br>
+					 	<li> Victor Miguel Lopes Negromonte Silva
+					 		<ul>
+					 			<li>Diretor Financeiro</li>
+					 			<li>Formado em Sistems de Informações no ano de 2019, pelo Instituto De Ensino Superior Da Paraíba (IESP)</li>
+					 			<li>Cofundador da FreeWithUs</li>
+					 		</ul>
+					 	</li><br>
+					 	<li> Lucas Vicente Periassu De Oliveira
+					 		<ul>
+					 			<li>Diretor De Produção</li>
+					 			<li>Formado em Engenharia Mecânica no ano de 2018, pelo Universidade Federal Da Paraíba (UFPB)</li>
+					 			<li>Cofundador da FreeWithUs</li>
+					 		</ul>
+					 	</li><br>
+					 	<li> Felipe Esc maia
+					 		<ul>
+					 			<li>Diretor Técnico</li>
+					 			<li>Formado em Engenharia Eletrica no ano de 2019, pelo Universidade Federal De Campina Grande (UFCG)</li>
+					 			<li>Cofundador da FreeWithUs</li>
+					 		</ul>
+					 	</li>
+					 </ul>
+					</div>
+				</div>
+			</div>
+			<div id="contato" class="section">	
+				<div id="suportetecnico" class="container-fluid"  style="padding-top:70px;padding-bottom:70px">
+					<div class="container-fluid">
+					<div class="section-title d-flex align-items-start justify-content-center" style="height: 100px"><h1>Suporte</h1></div>
+					  <p>Nós da FreeWithUs fornecemos suporte aos clientes que nos contrataram a qualquer momento, duvidas sobre os sistemas disponibilizados, materias nos quais usamos para ser feito a interação pedido pelo cliente e a cada 6 meses, revisão dos produtos instalados pelo mesmo, garantindo o melhor desempenho possivel do produto vendido.<ul><li>Número Para Suporte - (83) 9 9857-0438.</li><li>E-mail Para Contato - negromonte98@gmail.com</li></ul></p>
+					  
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+	<footer class="page-footer font-small unique-color-dark">
+
+	    <div style="background-color: #6351ce;">
+	      <div class="container">
+
+	        <!-- Grid row-->
+	        <div class="row py-4 d-flex align-items-center">
+
+	          <!-- Grid column -->
+	        	<div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+	            	<h6 class="mb-0">Conecte-se conosco nas nossas redes sociais!</h6>
+	          	</div>
+	          <!-- Grid column -->
+
+	          <!-- Grid column -->
+	         
+				<div class="col-md-6 col-lg-7 text-center text-md-right">
+		          	<div class="btn-group">
+					 <a href="https://www.youtube.com/channel/UCYyVEjlTgZJIL1BVycKkdXw" target="_blink"><button type="button" class="btn btn-danger">Youtube</button></a>
+					 <a href="https://www.linkedin.com/in/victor-negromonte-382a86123/" target="_blink"><button type="button" class="btn btn-info">Linkedin</button></a>
+					 <a href="https://www.instagram.com/victornegromonte/?hl=pt-br" target="_blink"><button type="button" class="btn btn-warning">Intagram</button></a>
+					 <a href="https://www.facebook.com/victor.migueu.1?ref=bookmarks" target="_blink"><button type="button" class="btn btn-primary">Facebook</button></a>
+					</div>	       
 		        </div>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link disabled" href="#">Disabled</a>
-		      </li>
-		    </ul>  
- 		 </div>
-	</nav>
-
-	<form>
-	  <div class="form-row">
-	    <div class="col-md-4 mb-3">
-	      <label for="validationServer01">Primeiro nome</label>
-	      <input type="text" class="form-control " id="validationServer01" placeholder="Nome"  required>
-	      <div class="valid-feedback">
-	        Por favor, informe o campo acima.
-	      </div>
-	    </div>
-	    <div class="col-md-4 mb-3">
-	      <label for="validationServer02">Sobrenome</label>
-	      <input type="text" class="form-control " id="validationServer02" placeholder="Sobrenome"  required>
-	      <div class="valid-feedback">
-	        Por favor, informe o campo acima.
-	      </div>
-	    </div>
-	    <div class="col-md-4 mb-3">
-	      <label for="validationServerUsername">Usuário</label>
-	      <div class="input-group">
-	        <div class="input-group-prepend">
-	          <span class="input-group-text" id="inputGroupPrepend3">@</span>
+	          <!-- Grid column -->
 	        </div>
-	        <input type="text" class="form-control " id="validationServerUsername" placeholder="Usuário" aria-describedby="inputGroupPrepend3" required>
-	        <div class="invalid-feedback">
-	          Por favor, escolha um nome de usuário.
+	        <!-- Grid row-->
+	      </div>
+	    </div>
+
+	    <!-- Footer Links -->
+	    <div class="container text-center text-md-left mt-5">
+
+	      <!-- Grid row -->
+	     	<div class="row mt-3">
+
+		        <!-- Grid column -->
+		        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+		          <h6 class="text-uppercase font-weight-bold">FreeWithUs</h6>
+		          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+		          <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
+		            adipisicing elit.</p>
+
+		        </div>
+		        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+		          <!-- Links -->
+		          <h6 class="text-uppercase font-weight-bold">Informações</h6>
+		          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+		          <p>
+		            <i class="fa fa-home mr-3 "></i> João Pessoa, Rua Glauber Leite Do Egito Reekers 144, BR</p>
+		          <p>
+		            <i class="fa fa-envelope mr-3"></i> negromonte98@gmail.com</p>
+		          <p>
+		            <i class="fa fa-phone mr-3"></i> + 55 83 99857-0438</p>
 	        </div>
 	      </div>
 	    </div>
-	  </div>
-	  <div class="form-row">
-	    <div class="col-md-6 mb-3">
-	      <label for="validationServer03">Cidade</label>
-	      <input type="text" class="form-control " id="validationServer03" placeholder="Cidade" required>
-	      <div class="invalid-feedback">
-	        Por favor, informe uma cidade válida.
-	      </div>
-	    </div>
-	    <div class="col-md-3 mb-3">
-	      <label for="validationServer04">Estado</label>
-	      <input type="text" class="form-control " id="validationServer04" placeholder="Estado" required>
-	      <div class="invalid-feedback">
-	        Por favor, informe um estado válido.
-	      </div>
-	    </div>
-	    <div class="col-md-3 mb-3">
-	      <label for="validationServer05">CEP</label>
-	      <input type="text" class="form-control " id="validationServer05" placeholder="CEP" required>
-	      <div class="invalid-feedback">
-	        Por favor, informe um CEP válido.
-	      </div>
-	    </div>
-	  </div>
-	  <div class="form-group">
-	    <div class="form-check">
-	      <input class="form-check-input " type="checkbox" value="" id="invalidCheck3" required>
-	      <label class="form-check-label" for="invalidCheck3">
-	        Concordo com os termos e condições
-	      </label>
-	      <div class="invalid-feedback">
-	        Você deve concordar, antes de continuar.
-	      </div>
-	    </div>
-	  </div>
-	  <button class="btn btn-primary" type="submit">Enviar</button>
-	</form>
-		<script src="js/jquery-3.3.1.min.js"></script>
- 		 <script src="http://code.jquery.com/jquery-latest.js"></script> 
- 		<script type="js/bootstrap.min.js"></script>
-
- <!--	<script type="text/javascript">
- 		(function(){
- 			'use strict';
-
- 			window.addEventListener('load', function(){
- 				var form= document.getElementById('needs-validation');
- 				form.addEventListener('submit', function(event){
- 					if (form.checkValidity()===false){
- 						event.preventDefault();
- 						event.stopPropagation();
- 					}
- 					form.classList.add('was-validated');
- 				}, false);
- 			}, false);
- 		})();
- 	</script>	-->
+	    <div class="footer-copyright text-center py-3">Copyright © 2018 - FreeWithUs, Fwu. | All Rights Reserved</div>
+	  </footer>
  	</body>
  </html>
