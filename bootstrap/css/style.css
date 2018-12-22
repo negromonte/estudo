@@ -1,0 +1,40 @@
+ header html{
+	background-image: url(../img/cozinha2.jpeg); 
+	
+}
+
+.banner{
+	background-image: url(../img/cozinha2.jpeg); 
+	width: 100%;
+	background-size: 100% 100%;
+	height: auto;
+	
+	}
+
+	#titulo{
+		font-size: 3em;
+		text-align: center;
+		padding-top: 5%;
+	}
+
+	h2{
+		font-size: 2em;
+		text-align: center;
+		padding-top: 40%;
+	}
+
+
+	/*
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<div class="fullscreen-bg" role="banner">
+				<div id="vide" class="fullscreen-bg__vide">
+					<img src="img/cozinha2.jpeg" class="img" width="100%">	
+					<div class="fullscreen-bg__caption" style="background: none;">	
+						<div class="container">	
+							<div class="jumbotron-bg__caption-text"> Automação Residencial! Livre-se do passado e Viva o futuro</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			*/
