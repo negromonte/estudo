@@ -2,57 +2,91 @@
 <html>
  	<head>
  		<meta charset="utf-8">
- 		<title>FreeWithUs</title>
- 		<meta name="viewport" content="width=device-width, initial-scale=1">
+ 		<title>BNTouch</title>
+ 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 		<meta http-equiv="x-ua-compatible" content="ie=edge">
  		<!--Bootstrap -->
  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
  		<link href="img/icons/fontawesome-free-5.4.1-web/css/all.css" rel="stylesheet">
  		<link href="MDBOOTSTRAP/css/mdb.css" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
+ 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Material Design Bootstrap -->
+		<link href="css/mdb.min.css" rel="stylesheet">
+	  	<link href="css/style.css" rel="stylesheet">
 
  	</head>
 
  	<body>
- 		<header>
-	 	<nav class="navbar navbar-expand-md deep-purple accent-2 navbar-dark">
-		  	<!-- Brand -->
-		 	<a class="navbar-brand font-weight-bold" href="index.html">FreeWithUs</a>
+ 	<header>
 
-		  	<!-- Toggler/collapsibe Button -->
-		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-		    <span class="navbar-toggler-icon"></span>
-		 	</button>
-		 	 <!-- Navbar links -->
-		  	<div class="collapse navbar-collapse justify-content-end font-weight-bold" id="collapsibleNavbar">
-			    <ul class="navbar-nav navbar-right">
-			    	<!--"active"  comando para destacar as paginas selecionadas-->
-			      <li class="nav-item active">
-			        <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#sobrenos').offset().top}, 2000);">Sobre Nós</a>
-			      </li>
-			      <li class="nav-item active">
-			        <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#casasfeitas').offset().top}, 2000);">Casas</a>
-			      </li>
-			      <li class="nav-item active">
-			        <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#oquefazemos').offset().top}, 2000);">O Que Fazemos</a>
-			      </li>
-			      <li class="nav-item active">
-			        <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#funcionarios').offset().top}, 2000);">Funcionários</a>
-			      </li> 
-			      <li class="nav-item active">
-			        <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#suporte').offset().top}, 2000);">Suporte</a>
-			      </li> 
-			    </ul>
-		  	</div> 
-		  	
-		</nav>
-			<div class="jumbotron text-center bg-light" style="margin-bottom:0">
-			  <h1>Automação Residencial </h1>
-			  <p>Liberte-se do passado e viva o Futuro!</p> 
-			</div>
-		</header>	
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
+      <div class="container">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">BNTouch</a>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <ul class="navbar-nav navbar-right">
+            <!--"active"  comando para destacar as paginas selecionadas-->
+            <li class="nav-item">
+              <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#sobrenos').offset().top}, 2000);">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#casasfeitas').offset().top}, 2000);">Casas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#oquefazemos').offset().top}, 2000);">O Que Fazemos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#funcionarios').offset().top}, 2000);">Funcionários</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#suporte').offset().top}, 2000);">Suporte</a>
+            </li> 
+          </ul>
+        </div> 
+        <!-- Links -->
+
+      <!-- Collapsible content -->
+    </div>
+    </nav>
+<!--/.Navbar-->
+
+<!-- Mascara -->
+    <div id="intro" class="view">
+      <div class="container-fluid full-bg-img d-flex align-items-center justify-content-center">
+        <div class="mask flex-center rgba-black-strong justify-content-center">
+          <div class="col-md-10 text-center">
+
+             <!-- Dadeçalho -->
+          <h2 class="display-3 font-bold white-text mb-2">O Futuro</h2>
+
+          <!-- Corpo -->
+          <hr class="hr-light">
+
+          <!-- Descrição -->
+          <h4 class="white-text my-4">Veja o que a ciência está trazendo para nós com as tecnologias que usamos para fazer a sua casa mais inteligente.</h4>
+
+          <button type="button" class="btn btn-outline-white" href="https://www.institutodatransformacao.com.br/as-transformacoes/noticias/internet-das-coisas-e-chave-para-o-futuro-do-brasil?gclid=Cj0KCQjwwODlBRDuARIsAMy_28Xtjc1dHTpQSYH6m4nGRZFvnuS1s55pUzeISNxAYdoZkxB5XAOvCCUaAttfEALw_wcB">Leia mais<i class="fa fa-book ml-2"></i></button>
+
+          </div>
+         
+        </div>
+        
+      </div>
+
+    </div>  
+  <!-- Mascara -->  
+  </header>	
 
 
 
@@ -236,7 +270,6 @@
 	         
 				<div class="col-md-6 col-lg-7 text-center text-md-right">
 		          	<div class="btn-group">
-					 <a href="https://www.youtube.com/channel/UCYyVEjlTgZJIL1BVycKkdXw" target="_blink"><button type="button" class="btn btn-danger">Youtube</button></a>
 					 <a href="https://www.linkedin.com/in/victor-negromonte-382a86123/" target="_blink"><button type="button" class="btn btn-info">Linkedin</button></a>
 					 <a href="https://www.instagram.com/victornegromonte/?hl=pt-br" target="_blink"><button type="button" class="btn btn-warning">Intagram</button></a>
 					 <a href="https://www.facebook.com/victor.migueu.1?ref=bookmarks" target="_blink"><button type="button" class="btn btn-primary">Facebook</button></a>
@@ -278,5 +311,9 @@
 	    </div>
 	    <div class="footer-copyright text-center py-3">Copyright © 2018 - FreeWithUs, Fwu. | All Rights Reserved</div>
 	  </footer>
+
+	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
  	</body>
  </html>
