@@ -18,6 +18,19 @@ header,
 	background-color: #24355c;
 }
 
+#fundadores{
+	width: 100%;
+	height: 100%;
+}
+
+#fundadores{
+	background: url(background.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 
 	/*
 <link rel="stylesheet" type="text/css" href="css/style.css">
