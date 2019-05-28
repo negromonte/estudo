@@ -31,8 +31,12 @@ header,
 	background-size: cover;
 }
 
-
+.navbar-brand img{
+	width: 100px;
+	height:70px;
+}
 	/*
+}
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <div class="fullscreen-bg" role="banner">
