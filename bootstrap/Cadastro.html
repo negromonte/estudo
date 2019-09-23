@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula jquery - Eventos de Teclado</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 		<meta http-equiv="x-ua-compatible" content="ie=edge">
+ 		<!--Bootstrap -->
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ 		<link href="img/icons/fontawesome-free-5.4.1-web/css/all.css" rel="stylesheet">
+ 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Material Design Bootstrap -->
+		<link href="css/mdb.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript" src="jquery/js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="jquery/js/Aula.js"></script>
+        <link rel="stylesheet" href="css/styleFormulario.css">
+    </head>
+    <body>
+        <header>
+
+         <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                <!-- Navbar brand -->
+                    <a class="navbar-brand" href="#"><img src="img/Logo-Automacao.png" alt="logo"></a>
+                
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                      <!-- Collapsible content -->
+                      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                          <ul class="navbar-nav navbar-right">
+                            <!--"active"  comando para destacar as paginas selecionadas-->
+                            <li class="nav-item">
+                              <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#sobrenos').offset().top}, 2000);">Sobre Nós</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#casasfeitas').offset().top}, 2000);">Casas</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#oquefazemos').offset().top}, 2000);">O Que Fazemos</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#fundadores').offset().top}, 2000);">Equipe</a>
+                            </li> 
+                            <li class="nav-item">
+                              <a class="nav-link" onclick="$('html, body').animate({scrollTop: $('#suportetecnico').offset().top}, 2000);">Suporte</a>
+                            </li> 
+                          </ul>
+                        </div> 
+                        <!-- Links -->
+                
+                      <!-- Collapsible content -->
+                    </div>
+                    </nav>
+        </header>
+        <section>
+          <div class="ex1">Formulario</div>
+
+          <div class="resp"></div>
+          <!-- <div class="erros"><p>Preencha todos os campos corretamente!</p></div>
+          <div class="correto"><p>Sua Requisição Foi Enviada!</p></div> -->
+
+          <form id="formulario" method="post" enctype="multipart/form-data" name="formulario">
+            <ul id="progress">
+              <li class="ativo">Informações Pessoais</li>
+              <li>Detalhes do Usuario</li>
+              <li>Configurações adcionais</li>
+            </ul>
+            <fieldset>
+              <h2>Configurações Pessoais</h2>
+              <h3>Algumas Informações</h3>
+              <input type="text" name="NomeCompleto" placeholder="Nome Completo" />
+              <input type="date" name="dataNascimento" placeholder="Data de nascimento"/>
+              <input type="text" name="Email" placeholder="Email"/>
+              <input type="text" name="Cidade" placeholder="Cidade Onde Mora"/>
+              <input type="button" name="next1" class="Next acao1" value="Proximo"/>
+            </fieldset>
+            <fieldset>
+              <h2>Configurações do Usuario</h2>
+              <h3>Detalhes da conta</h3>
+              <input type="text" name="Usuario" placeholder="Nome do Usuario" />
+              <input type="password" name="Senha" placeholder="Senha"/>
+              <input type="password" name="Csenha" placeholder="Confirmar Senha"/>
+              <input type="button" name="prev" class="Prev acao" value="Anterior"/>
+              <input type="button" name="next2" class="Next acao2" value="Proximo"/>
+            </fieldset>
+            <fieldset>
+              <h2>Configurações Adicionais</h2>
+              <h3>Mais informações</h3>
+              <input type="text" name="Empresa" placeholder="Nome da Empresa" />
+              <input type="text" name="Linkedin" placeholder="Usuario Linkedin"/>
+              <input type="text" name="Twitter" placeholder="Usuario Twitter"/>
+              <input type="button" name="prev" class="Prev acao" value="Anterior"/>
+              <input type="submit" name="salvar" class="acao2" value="Salvar"/>
+            </fieldset>
+          </form>
+        </section>
+        <footer class="page-footer font-small unique-color-dark">
+
+            <div style="background-color: #6351ce;">
+              <div class="container">
+      
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+      
+                  <!-- Grid column -->
+                  <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                      <h6 class="mb-0">Conecte-se conosco nas nossas redes sociais!</h6>
+                    </div>
+      
+                  <!-- Grid column -->
+             
+              <div class="col-md-6 col-lg-7 text-center text-md-right">
+      
+                      <!-- Facebook -->
+                      <a class="fb-ic">
+                        <i class="fab fa-facebook-f white-text mr-4"> </i>
+                      </a>
+                      <!--Linkedin -->
+                      <a class="li-ic">
+                        <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                      </a>
+                      <!--Instagram-->
+                      <a class="ins-ic" href="https://www.instagram.com/bn.touch/">
+                        <i class="fab fa-instagram white-text"> </i>
+                      </a>
+      
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row-->
+              </div>
+            </div>
+      
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left mt-5">
+      
+              <!-- Grid row -->
+               <div class="row mt-3">
+      
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+      
+                    <h6 class="text-uppercase font-weight-bold">BNTouch</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit.</p>
+      
+                  </div>
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Informações</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                      <i class="fa fa-home mr-3 "></i> João Pessoa, Rua Glauber Leite Do Egito Reekers 144, BR</p>
+                    <p>
+                      <i class="fa fa-envelope mr-3"></i> bntouch.pedro@gmail.com</p>
+                    <p>
+                      <i class="fa fa-phone mr-3"></i> + 55 (83) 9 9317-5210</p>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright text-center py-3">Copyright © 2018 - BNTouch, Fwu. | All Rights Reserved</div>
+          </footer>
+
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> 
+      <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+     <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    </body>
+    
+</html>
