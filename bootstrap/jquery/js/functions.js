@@ -50,7 +50,7 @@ $(function(){
         }
     });
 
-    $('input[name=next2').click(function(){
+    $('input[name=next2]').click(function(){
         var array = formulario.serializeArray();
         if(array[4].value == '' || array[5].value == '' || array[6].value == ''){
             $('.resp').html('<div class="erros"><p>Preencha Todos Os Detalhes Da Conta.</p></div>');

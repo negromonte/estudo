@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "groups-max-layers": [true, {
+      "maxLayers": 9
+    }],
+    "layers-no-hidden": true,
+    "debug-throws-error": true
+  }
+}
